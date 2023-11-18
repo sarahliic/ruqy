@@ -1,3 +1,24 @@
+//JavaScript for Toggle Menu
+function showMenu() {
+  const links = document.querySelector(".links");
+  const barsIcon = document.querySelector(".fa-bars");
+  const timesIcon = document.querySelector(".fa-times");
+
+  links.style.display = "block";
+  barsIcon.style.display = "none";
+  timesIcon.style.display = "block";
+}
+
+function hideMenu() {
+  const links = document.querySelector(".links");
+  const barsIcon = document.querySelector(".fa-bars");
+  const timesIcon = document.querySelector(".fa-times");
+
+  links.style.display = "none";
+  barsIcon.style.display = "block";
+  timesIcon.style.display = "none";
+}
+
 // const url = "https://ali-express1.p.rapidapi.com/categories";
 // const options = {
 //   method: "GET",
