@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>api</title>
+  </head>
+  <body>
+    <button id="button">اضف الرابط</button>
+    <br />
+    <br />
+    <img src="" alt="" />
+    <input id="name" type="input" placeholder=" اسم الصورة" />
+    <br />
+    <input id="url" type="input" placeholder="رابط الصورة" />
+
+    <script>
+      let button = document.getElementById("button");
+      let nameInput = document.getElementById("name");
+      let urlInput = document.getElementById("url");
+
+      button.addEventListener("click", () => {
+        let name = nameInput.value;
+        let url = urlInput.value;
+
+        fetch("https://65544e5463cafc694fe650bf.mockapi.io/products", {
+          method: "POST",
+          body: JSON.stringify({
+            name: name,
+            urlimg: url,
+          }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
+          .then((response) => response.json())
+          .then((result) => {
+            console.log("تمت إضافة الصورة بنجاح:", result);
+            let imageOne = document.querySelector("img");
+            imageOne.src = result.urlimg;
+          })
+          .catch((error) => {
+            console.error("حدث خطأ أثناء إضافة الصورة:", error);
+          });
+      });
+    </script>
+  </body>
+</html>
