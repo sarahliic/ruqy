@@ -9,6 +9,7 @@ body {
 /* header {
   display: flex;
 } */
+
 .price-offer {
   width: 100%;
   text-align: center;
@@ -26,6 +27,12 @@ body {
   text-align: center;
   box-shadow: 0 4px 2px -2px rgb(172, 168, 168);
 }
+.link-logo {
+  text-decoration: none;
+  color: #131212;
+  font-weight: bolder;
+  font-size: 2rem;
+}
 
 .links {
   list-style: none;
@@ -40,6 +47,11 @@ body {
   margin-right: 7rem;
   cursor: pointer;
   margin-top: 1rem;
+  text-decoration: none;
+}
+.a-links {
+  text-decoration: none;
+  color: #131212;
 }
 .login {
   max-width: 30%;
@@ -172,6 +184,7 @@ body {
   font-weight: bold;
   font-size: 1.3rem;
   color: #fff;
+  cursor: pointer;
 }
 
 .team-itme-infi p {
@@ -223,7 +236,8 @@ body {
 @media (max-width: 991px) {
   .hero-box {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    height: 120vh;
   }
   .row,
   .footer-container {

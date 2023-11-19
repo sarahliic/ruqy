@@ -41,6 +41,16 @@ body {
   cursor: pointer;
   margin-top: 1rem;
 }
+.a-links {
+  text-decoration: none;
+  color: #131212;
+}
+.link-logo {
+  text-decoration: none;
+  color: #131212;
+  font-weight: bolder;
+  font-size: 2rem;
+}
 .login {
   max-width: 30%;
   cursor: pointer;
