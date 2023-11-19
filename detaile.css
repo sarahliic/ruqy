@@ -224,7 +224,7 @@ body {
   transition: all 0.5s;
 }
 .cart-btn:hover {
-  background-color: #64af3d;
+  background-color: #131212c4;
 }
 /* footer,styling */
 /* Footer  */
@@ -271,19 +271,24 @@ body {
 
   .left-column,
   .right-column {
+    margin-top: 5rem;
     width: 100%;
   }
 
   .left-column img {
-    width: 300px;
+    text-align: center;
+    margin: 0 3rem 3rem 0;
+    max-width: 100%;
     right: 0;
-    top: -65px;
+    top: -75px;
     left: initial;
   }
 }
 
 @media (max-width: 535px) {
   .left-column img {
+    text-align: center;
+    margin: 0 3rem 3rem 0;
     width: 220px;
     top: -85px;
   }
