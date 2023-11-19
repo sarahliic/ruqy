@@ -1,21 +1,3 @@
-// const url =
-//   "https://shein-xi-yin-data-service.p.rapidapi.com/product/get_goods_details?goods_id=14738124&country=US&language=en&currency=USD";
-// const options = {
-//   method: "GET",
-//   headers: {
-//     "X-RapidAPI-Key": "fe056432ecmsh3fbb7f0d42e44b5p1b5b19jsn7353f6fdd91d",
-//     "X-RapidAPI-Host": "shein-Xi-Yin-data-service.p.rapidapi.com",
-//   },
-// };
-
-// try {
-//   const response = await fetch(url, options);
-//   const result = await response.text();
-//   console.log(result);
-// } catch (error) {
-//   console.error(error);
-// }
-
 function storeApiTest() {
   fetch("https://65544e5463cafc694fe650bf.mockapi.io/products", {
     method: "GET",
@@ -57,7 +39,7 @@ function storeApiTest() {
         Image.src = `${data[i].urlimg}`;
         productTitle.innerText = `${data[i].name}`;
         // productPrice.innerText = `$${data[i].price}`;
-        productBtn.innerText = "اضف إلى حقيبة التسوق";
+        productBtn.innerText = "حف المنتج";
       }
     });
 }

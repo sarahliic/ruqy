@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css links -->
+    <link rel="stylesheet" href="./closhthes.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- ICONS LINKS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Ruqy webstie</title>
+  </head>
+  <body>
+    <section class="hero">
+      <!-- nav bar -->
+      <header>
+        <div class="price-offer">
+          <p>توصيل مجاني لجميع مناطق المملكة عند الطلب بقيمة 200 ريال</p>
+        </div>
+
+        <nav class="navbar">
+          <div class="login-sella">
+            <a href="./login.html"
+              ><img src="./image/login.png" alt="login" class="login"
+            /></a>
+            <a href="./salla.html"
+              ><img src="./image/sella.png" alt="sella" class="sella"
+            /></a>
+          </div>
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul class="links">
+            <li><a href="./closhthes.html " class="a-links">عبايات</a></li>
+            <li><a href="./closhthes.html " class="a-links">فساتين</a></li>
+            <li><a href="./closhthes.html " class="a-links">جلابيات</a></li>
+            <li><a href="./closhthes.html " class="a-links">حجابات</a></li>
+            <li><a href="./closhthes.html " class="a-links">اكسسوارات</a></li>
+          </ul>
+          <a class="logo link-logo" href="./index.html">رُقي</a>
+        </nav>
+      </header>
+      <!-- Products section -->
+      <section class="products">
+        <div class="title">
+          <h3 class="title-name">المنتجات</h3>
+        </div>
+        <hr />
+        <!-- Start Container products -->
+        <div class="container"></div>
+      </section>
+      <!-- Start Footer -->
+      <div class="footer-container">
+        <div class="logo footer-logo">رُقي</div>
+        <p>شارك وتسوق معنا</p>
+        <p>الشروط والأحكام سياسة الخصوصية</p>
+        <p>جميع الحقوق محفوظة لرُقي 2023</p>
+      </div>
+    </section>
+    <!-- End Footer -->
+    <!-- JS scritps -->
+    <script>
+      // if (sessionStorage.getItem("id")) {
+      //   let username = document.querySelector(".name");
+      //   username.innerHTML = `Hello ${sessionStorage.getItem("id")}`;
+      // } else {
+      //   window.location.href = "Login.html";
+      // }
+    </script>
+    <script src="./js/admin.js"></script>
+  </body>
+</html>

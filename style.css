@@ -224,7 +224,7 @@ body {
   }
 
   .fa-bars {
-    display: block;
+    display: none;
   }
 
   .fa-times {
