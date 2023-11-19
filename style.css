@@ -251,7 +251,52 @@ body {
     margin-bottom: 75px;
   }
 }
+@media only screen and (max-width: 763px) {
+  .links {
+    display: none;
+  }
 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #hamburger-icon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+
+#navbar-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.links li {
+  margin: 0 10px;
+}
+
+.a-links {
+  color: black;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
 @media (max-width: 575px) {
   .hero-box {
     display: flex;
