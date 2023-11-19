@@ -1,23 +1,18 @@
 //JavaScript for Toggle Menu
-function showMenu() {
-  const links = document.querySelector(".links");
-  const barsIcon = document.querySelector(".fa-bars");
-  const timesIcon = document.querySelector(".fa-times");
-
-  links.style.display = "block";
-  barsIcon.style.display = "none";
-  timesIcon.style.display = "block";
-}
+const hamburgerIcon = document.getElementById("hamburger-icon");
+const navbarLinks = document.getElementById("navbar-links");
 
 function hideMenu() {
-  const links = document.querySelector(".links");
-  const barsIcon = document.querySelector(".fa-bars");
-  const timesIcon = document.querySelector(".fa-times");
-
-  links.style.display = "none";
-  barsIcon.style.display = "block";
-  timesIcon.style.display = "none";
+  navbarLinks.style.display = "none";
 }
+
+hamburgerIcon.addEventListener("click", function () {
+  if (navbarLinks.style.display === "none") {
+    navbarLinks.style.display = "flex";
+  } else {
+    navbarLinks.style.display = "none";
+  }
+});
 // =========================================================
 let container = document.querySelector(".container");
 
