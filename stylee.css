@@ -227,4 +227,234 @@ justify-content: end;
     font-weight: bold;
     font-size: 2rem;
   }
+  @media (max-width: 768px) {
+    body{
+      margin: 0;
+  }
+  .navbar {
+      width: 100%;
+      height:90px;
+      text-align: center;
+      box-shadow: 0 4px 2px -2px rgb(172, 168, 168);
+    }
+    .link-logo {
+      text-decoration: none;
+      color: #131212;
+      font-weight: bolder;
+      font-size: 2rem;
+    }
+    
+    
+    .links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      color: #131212;
+      font-weight: bold;
+      /* justify-content: center; */
+      align-items: center;
+      text-align: center;
+      width: 30%;
+      margin-right: 7rem;
+      cursor: pointer;
+      margin-top: 1rem;
+      text-decoration: none;
+    }
+    .a-links {
+      text-decoration: none;
+      color: #131212;
+    }
+    .login-sella{
+      display: flex;
+      height: auto;
+    
+    }
+    .login {
+      width: 68%;
+      cursor: pointer;
+    }
+    .sella {
+      width: 70%;
+      cursor: pointer;
+    }
+    .logo {
+      margin-right: 2rem;
+      cursor: pointer;
+    }
+    .user-logo{
+      height:25px;
+      display: flex;
+      flex-direction: column;
+    }
+    .user{
+      font-size: x-small;
+      font-weight: bold;
+      width: auto;
+      height:auto;
+      text-align:center; 
+    }
+    .navbar .fa {
+      display: none; /* to diplay icons in the full screen */
+    }
+    .contentSi{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: end;
+      background: #FAF9F9;
+      
+    }
+    .contentSi img{
+      width: 30%;
+    }
+    .contenr-signin{
+    
+      height:auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top:10px;
+      margin-bottom: 10px;
+  }
+  .contenr-signup{
+      
+      height:auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     
+  }
+  .signupdiv{
+      width: 100%;
+      height:54.7vh;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      /* background-color: #fff; */
+      border-style:inherit;
+      border-width: 1px;
+      background: #FAF9F9;
+      border-radius: 10px;
+      padding:40px; 
+      display: flex;
+      flex-direction: column;
+      justify-content:space-evenly;
+  }
+  .signindiv{
+      width: 100%;
+      height: 51.7vh;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background: #FAF9F9;
+      border-radius: 10px;
+      padding:40px;  
+      display: flex;
+      flex-direction: column;
+      justify-content:space-evenly;
+  }
   
+  h2 {
+  text-align: center;
+  color: #333;
+  }
+  .logo {
+      width: 10%;
+      border-radius: 10px;
+      /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .div {
+  margin-bottom: 12px;
+  direction: rtl;
+  text-align: right;
+  }
+  
+  .div label{
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+  font-size:medium;
+  }
+  
+  .div input {
+  width: 100%;
+  padding: 8px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  color: #333;
+  }
+  
+  .butnen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  
+  .forgotpassword{
+  font-size:small;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: black;
+  
+  }
+  .butnendiv{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+  }
+  .contenubutton{
+      padding:10px;
+      width: 100%;
+      margin-top: 4px;
+      font-size:medium;
+      cursor: pointer;
+      border-radius: 27px;
+      color: white;
+      background-color: rgb(17, 17, 17);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      transition: 0.9s ease;
+      cursor: pointer;
+      border-style:none;
+  }
+  .contenubutton:hover{
+      background-color: rgba(26, 24, 24, 0.603);
+    
+  }
+  .end{
+      display: flex;
+      flex-direction: column;
+      justify-content:space-evenly;
+  }
+  .butnen{
+  display: flex;
+  justify-content: end;
+  
+  }
+  .contenrmain1{
+      width: 100%;
+      height:70vh ;
+  }
+  .footer-container {
+      background-color: #131212;
+      min-height: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      align-items: center;
+      color: #ffffff;
+      padding: 3rem;
+    }
+    .footer-container img {
+      width: 10%;
+    }
+    .footer-logo {
+      font-weight: bold;
+      font-size: 2rem;
+    }
+  }
