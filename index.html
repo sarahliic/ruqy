@@ -37,16 +37,21 @@
         <div class="price-offer">
           <p>توصيل مجاني لجميع مناطق المملكة عند الطلب بقيمة 200 ريال</p>
         </div>
-
         <nav class="navbar">
           <div class="login-sella">
+            <div class="user-logo">
+              <div>
             <a href="./login.html"
               ><img src="./image/login.png" alt="login" class="login"
             /></a>
-            <a href="./salla.html"
-              ><img src="./image/sella.png" alt="sella" class="sella"
-            /></a>
           </div>
+          <div>
+            <p class="user" id="user"></p>
+          </div>
+          </div>
+            <a href="./salla.html"><img src="	http://127.0.0.1:5500/image/sella.png" alt="sella" class="sella"/></a>
+          </div>
+        </div>
           <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul class="links">
             <li><a href="./closhthes.html " class="a-links">عبايات</a></li>
@@ -129,6 +134,12 @@
       // } else {
       //   window.location.href = "Login.html";
       // }
+
+      let name1 = document.getElementById("user")
+      let x = localStorage.getItem("Name")
+      name1.textContent = x
+
+      
     </script>
     <script src="./js/main.js"></script>
     <script

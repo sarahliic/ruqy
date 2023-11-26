@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylee.css" />
+    <title>Document</title>
+</head>
+<body>
+<div class="contentSi">
+  <img src="image/Retail.png">
+    <div class="contenr-signup">
+      <h1 class="logo-signi">رُقي</h1>
+        <div class="signupdiv">
+            <h2>أنشاء حساب</h2>
+        <div class="div">
+            <label for="username"> اسم المستخدم:</label>
+            <input type="text" id="username" name="username" placeholder="ادخل اسم المستخدم ">
+            
+        </div>
+        <div class="div">
+            <label for="email"> البريد الألكتروني:</label>
+            <input type="text" id="email" name="username" placeholder="ادخل البريد الألكتروني">
+          
+        </div>
+        <div class="div">
+            <label for="password">كلمة المرور:</label>
+            <input type="password" id="password" name="password" placeholder="ادخل كلمة المرور">
+        </div>
+        <div class="div">
+            <label for="password">اعادة كلمة المرور:</label>
+            <input type="password" id="rpassword" name="password" placeholder="ادخل اعادة كلمة المرور">
+        </div>
+        <div class="end">
+        <div class="butnen">
+            <a class="forgotpassword" href="signIn.html" class="buten-account"> لدي حساب</a>
+        </div>
+        <div class="butnendiv">
+        <button class="contenubutton" id="contenubutton">أستمرار</button>
+        </div>
+        </div>
+        </div>
+    </div>
+  </div>
+    <div class="footer-container">
+      <div class="logo footer-logo">رُقي</div>
+      <p>شارك وتسوق معنا</p>
+      <p>الشروط والأحكام سياسة الخصوصية</p>
+      <p>جميع الحقوق محفوظة لرُقي 2023</p>
+    </div>
+    <script>
+        function createAccount() {
+  
+
+  contenubutton.addEventListener("click", () => {
+  let username = document.getElementById('username').value;
+  let email = document.getElementById('email').value;
+  let password = document.getElementById('password').value;
+  let rpassword = document.getElementById('rpassword').value;
+  let contenubutton = document.getElementById("contenubutton");
+
+      
+    if (username.length <= 5) {
+      alert("The username should be greater than five characters");
+      return;
+    }
+
+    if (email.length === 0 || !validateEmail(email)) {
+      alert("Invalid email address");
+      return;
+    }
+    if (password.value !== rpassword.value) {
+      alert("The password is not identical");
+      return;
+    } else if (password.length < 8) {
+      alert("The password is less than eight characters");
+      return;
+    }
+    fetch("https://6552c0675449cfda0f2dca61.mockapi.io/books", {
+                method: "POST",
+                body: JSON.stringify({
+                username: username,
+                email: email,
+                rpassword: rpassword,
+                }),
+                headers: {
+                  "Content-type": "application/json; charset=UTF-8",
+                },
+              })
+                .then((response) => response.json())
+                .then((json) => (window.location.href = "signIn.html"));
+  });
+}
+createAccount(); 
+
+function validateEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+
+
+    </script>         
+</body>
+</html>

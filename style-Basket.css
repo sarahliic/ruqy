@@ -1,0 +1,221 @@
+body{
+    margin: 0;
+ }
+ .navpar{
+     width: 100%;
+     height: 86px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: rgb(10, 10, 10);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+
+ }
+ .navparprodect{
+
+     list-style: none;
+     display: flex;
+     font-family: Poppins;
+     font-weight: 600;
+     word-wrap: break-word;
+     color: white;
+ }
+ .navparprodect li{
+     margin-left: 10px;
+     transition: 0.5s ease;
+     cursor: pointer;
+ }
+ .navparprodect li:hover{
+     font-size: larger;
+ }
+ .navpar p{
+     font-family: Poppins;
+     font-size: large;
+     font-weight: 600;
+     word-wrap: break-word;
+     color: white;
+     padding-right: 20px;
+ }
+ .navparimg{
+     display: flex;
+     flex-direction: row;
+     list-style:none;
+ }
+ .navparimg li{
+     margin-left: 30%;
+
+ }
+ .navparimg li img {
+      width: 20px; 
+      transition: 0.5s ease;
+      cursor: pointer;
+ }
+ .navparimg li img:hover{
+     width: 23px; 
+ }
+ .content{
+     display: flex;
+     flex-direction: column;
+     align-items: end;
+ }
+
+ .contenr1{
+     width: 100%;
+     height:15vh ;
+     display: flex;
+     justify-content:space-around;
+     align-items: center;
+ }
+ .tocontinu{
+     padding: 5px 12vh;
+     color: white;
+     background-color: black;
+     border-radius: 20px;
+     font-size: medium;
+     cursor: pointer;
+ }
+
+ .foter{
+     width: 100%;
+     height:300px;
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content:space-around;
+     align-items: center;
+     background-color: rgb(10, 10, 10);
+ }
+ .foter h1{
+     font-weight: bold;
+     color: white;
+ }
+ .brodect h2{
+     color: white;
+ }
+.brodectul li{
+ font-size: medium;
+ list-style:none;
+ margin-top: 18px;
+ font-weight: bold;
+ color: white;
+ transition: 0.5s ease;
+ cursor: pointer;
+ }
+ .brodectul li:hover{
+     font-size: x-large; 
+ }
+
+.subscripdiv{
+ display: flex;
+ flex-direction: column;
+}
+.subscripdiv h2{
+ color: white;
+}
+.butnensubscrip{
+ padding: 10px;
+ width:15vh;
+ font-weight: bold;
+ background-color: white;
+ border-style: none;
+ transition: 0.9s ease;
+ cursor: pointer;
+ border-style:none;
+ border-radius: 5px;
+ }
+ .butnensubscrip:hover{
+ background-color: rgba(255, 255, 255, 0.637);
+   
+ }
+
+.intersubscrip{
+ padding: 10px;
+ width:40vh;
+ background-color: white;
+ border-style: none;
+}
+.prodectfavorite{
+ width: 100%;
+ height: 80vh;
+ }
+ .prodectfavorite{
+     width: 100%;
+     height:auto;
+     display: flex;
+     justify-content: center;
+     
+ }
+ .topay{
+     width: 300px;
+     height: 500px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     background: #FAF9F9;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .topaybutton{
+     width: 100%;
+     padding: 8px;
+     color: white;
+     background-color: black;
+     border-radius: 20px;
+     font-size: medium;
+     cursor: pointer;
+     margin: 2px;
+     width: 23vh;
+ }
+ .plusfavorite{
+     width: 200px;
+     height: 500px;
+     display: flex;
+     justify-content:end;
+     align-items:center;
+     margin-right: 20PX;
+ }
+ .plusfavorite button{
+     background: #FAF9F9;
+     border-style: none;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     padding: 8px 11px;
+     margin-right: 15PX;
+     cursor: pointer;
+ }
+ .favoriteimg{
+     width: 300px;
+     height: 500px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     background: #FAF9F9;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     margin-right: 20px;
+ }
+ .favoriteimg button{
+     width: 22vh;
+     padding: 8px ;
+     color: white;
+     background-color: black;
+     border-radius: 20px;
+     font-size: medium;
+     margin: 5px;
+     cursor: pointer;
+ }
+ .divfavoriteimgbutton{
+     display: flex;
+     justify-content: center;
+ }
+ .favoriteimg img{
+     width: 300px;
+     height: 400px; 
+ }
+ hr{
+     margin: 20px;
+     height: 1px;
+     background-color: rgba(0, 0, 0, 0.772);
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .addfavoriteimg{
+     margin-right: 200px;
+ }

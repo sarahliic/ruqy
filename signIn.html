@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylee.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="contentSi">
+        <img src="image/Retail.png">
+    <div class="contenr-signin">
+       <h1 class="logo-signi">رُقي</h1>
+        <div class="signindiv">
+            <h2>تسجيل دخول</h2>
+        <div class="div">
+            <label for="username"> اسم المستخدم:</label>
+            <input type="text" id="username" name="username" placeholder="ادخل اسم المستخدم اوالايميل">
+            <br>
+        </div>
+        <div class="div">
+            <label for="password">كلمة المرور:</label>
+            <input type="password" id="password" name="password" placeholder="ادخل كلمة المرور">
+        </div>
+        <div class="end">
+        <div class="butnen">
+            
+            <a class="forgotpassword" href="signUp.html" class="buten-account">انشاء حساب</a>
+        </div>
+        <div class="butnendiv">
+        <button class="contenubutton" id="contenubutton">تسجيل دخول</button>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+    <div class="footer-container">
+        <div class="logo footer-logo">رُقي</div>
+        <p>شارك وتسوق معنا</p>
+        <p>الشروط والأحكام سياسة الخصوصية</p>
+        <p>جميع الحقوق محفوظة لرُقي 2023</p>
+      </div>
+    <script>
+        
+let contenubutton = document.getElementById('contenubutton');
+
+  contenubutton.addEventListener("click", () => {
+  let username = document.getElementById('username').value;
+  let password = document.getElementById('password').value;
+  
+
+  fetch("https://6552c0675449cfda0f2dca61.mockapi.io/books")
+    .then((response) => response.json())
+    .then((data) => {
+      let isValidUser = false;
+      for (let i = 0; i < data.length; i++) {
+        if (username === data[i].username && password === data[i].rpassword) {
+          isValidUser = true;
+          break;
+        }
+      }
+      if (isValidUser) {
+        localStorage.setItem("Name",username)
+        window.location.href = "index.html";
+      } else {
+        alert("اسم المستخدم أو كلمة المرور غير صحيحة");
+      }
+    });
+});
+    </script>          
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Css links -->
+     <link rel="stylesheet" href="/stylee.css" />
+     <link rel="stylesheet" href="/style-Basket.css" />
+
+     <link
+       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+       rel="stylesheet"
+       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+       crossorigin="anonymous"
+     />
+     <!-- bootstrap -->
+     <link
+       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+       rel="stylesheet"
+       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+       crossorigin="anonymous"
+     />
+     <!-- ICONS LINKS -->
+     <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+       crossorigin="anonymous"
+       referrerpolicy="no-referrer"
+     />
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="login-sella">
+          <div class="user-logo">
+            <div>
+          <a href="/image/login.png"
+            ><img src="image/login.png" alt="login" class="login"
+          /></a>
+        </div>
+        <div>
+          <p class="user" id="user"></p>
+        </div>
+        </div>
+          <a href="./salla.html"><img src="	http://127.0.0.1:5500/image/sella.png" alt="sella" class="sella"/></a>
+        </div>
+      </div>
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul class="links">
+          <li><a href="./closhthes.html " class="a-links">عبايات</a></li>
+          <li><a href="./closhthes.html " class="a-links">فساتين</a></li>
+          <li><a href="./closhthes.html " class="a-links">جلابيات</a></li>
+          <li><a href="./closhthes.html " class="a-links">حجابات</a></li>
+          <li><a href="./closhthes.html " class="a-links">اكسسوارات</a></li>
+        </ul>
+        <a class="logo link-logo" href="./index.html">رُقي</a>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+
+      <div class="contenr1">
+        <div>
+            <button class="tocontinu" id="tocontinu">متابعة التسوق</button>
+        </div>
+        <h1>مفضلاتك</h1>
+    </div>
+    <div class="content">
+    <div class="prodectfavorite" id="prodectfavorite">
+        <div class="topay">
+            <h2>خاصية الدفع الامن</h2>
+            
+            <h2>التوصيل السريع + 11 ر.س</h2>
+            <div>
+            <button class="topaybutton" id="topaybutton">متابعة عملية الشراء</button>
+            </div>
+        </div>
+        <div class="plusfavorite">
+            <div><button id="coenternumber">1</button></div>
+            <div><button id="coenterplus">+</button></div>     
+        </div>
+        <div class="favoriteimg" id="favoriteimg"> 
+            <img src="https://images.pexels.com/photos/6282053/pexels-photo-6282053.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+            <div class="divfavoriteimgbutton">
+                <button class="divfavoriteimgbutton" id="divfavoriteimgbutton">ازالة المنتج</button>
+            </div>
+        </div>
+    </div>
+    <div class="addfavoriteimg" id="addfavoriteimg" >
+   
+    </div>
+    </div>
+    <div class="footer-container">
+        <div class="logo footer-logo">رُقي</div>
+        <p>شارك وتسوق معنا</p>
+        <p>الشروط والأحكام سياسة الخصوصية</p>
+        <p>جميع الحقوق محفوظة لرُقي 2023</p>
+    </div>
+    <script>
+         document.getElementById("divfavoriteimgbutton").addEventListener("click", () => {
+          let favoriteimg = document.getElementById("prodectfavorite");
+          prodectfavorite.parentNode.removeChild(prodectfavorite);
+        });
+        
+        document.getElementById("tocontinu").addEventListener("click", () => {
+          window.location.href = "index.html";
+        });
+
+        document.getElementById("topaybutton").addEventListener("click", () => {
+          window.location.href = "pay.html";
+        });
+    </script>
+
+

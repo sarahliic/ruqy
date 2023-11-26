@@ -1,0 +1,316 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.navbar {
+    width: 100%;
+    height:90px;
+    text-align: center;
+    box-shadow: 0 4px 2px -2px rgb(172, 168, 168);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  }
+  .link-logo {
+    text-decoration: none;
+    color: #131212;
+    font-weight: bolder;
+    font-size: 2rem;
+  }
+  
+  
+  .links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: #131212;
+    font-weight: bold;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    margin-right: 7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    text-decoration: none;
+  }
+  .a-links {
+    text-decoration: none;
+    color: #131212;
+  }
+  .login-sella{
+    display: flex;
+    height: auto;
+  
+  }
+  .login {
+    width: 68%;
+    cursor: pointer;
+  }
+  .sella {
+    width: 70%;
+    cursor: pointer;
+  }
+  .logo {
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+  .user-logo{
+    height:25px;
+    display: flex;
+    flex-direction: column;
+  }
+  .user{
+    font-size: x-small;
+    font-weight: bold;
+    width: auto;
+    height:auto;
+    text-align:center; 
+  }
+  .navbar .fa {
+    display: none; 
+  }
+  .contenrsalry{
+    width: 100%;
+    height: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .adressecontenr{
+   display: flex;
+   flex-direction: column;
+   align-items: end;
+   }
+   .dataadresse{
+    width:95vh;
+    height: 40vh;
+    background: #FAF9F9;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    direction: rtl;
+    text-align: right;
+    
+   }
+   .adresscontenrright{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+   }
+   .adresscontenrleft{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+   }
+   .adresscontenrleft button{
+    padding: 8px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    font-size: medium;
+    cursor: pointer;
+    margin: 2px;
+    width: 23vh;
+   }
+   input{
+    width: 32vh;
+    padding:15px;
+    border-radius: 20px;
+    border-style:solid;
+    border-width: 1px;
+   }
+   .datapay{
+    width:95vh;
+    height: 40vh;
+    background: #FAF9F9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+   }
+   .cardpay{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+   }
+   .datapay button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-width: 1px;
+    margin-left: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.694);
+    background-color:white;
+    border-style: none;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+   }
+   .datapay button:active,
+   .datapay button:focus {
+    background-color: #000000a0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    }
+   .Applepay{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    
+   }
+   .ontimepay{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+   }
+   .ordercontenr{
+    display: flex;
+   flex-direction: column;
+   align-items: end;
+   }
+   .fastorder{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+   }
+   .fastorderbutton{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-width: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.694);
+    background-color:white;
+    border-style: none;
+    margin: 2px;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+   }
+   .fastorderbutton:active,
+   .fastorderbutton:focus {
+    background-color: #000000a0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    }
+   .order img{
+    width: 100%;
+    height: 80%;
+   }
+   .order{
+    width:95vh;
+    height: 40vh;
+    background: #FAF9F9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content:space-around;
+   }
+   .dataorder{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items:center;
+
+   }
+   .Finish-order-button{
+    padding: 8px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    font-size: medium;
+    cursor: pointer;
+    margin: 2px;
+    width: 23vh;
+   }
+   .imgorder{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   }
+   .imgorderbutton{
+    display: flex;
+    justify-content:space-between;
+   }
+   .imgorderbutton button{
+    padding: 8px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    font-size: medium;
+    cursor: pointer;
+    width: 23vh;
+   }
+    .foter{
+    width: 100%;
+    height:300px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-around;
+    align-items: center;
+    background-color: rgb(10, 10, 10);
+    }
+    .foter h1{
+    font-weight: bold;
+    color: white;
+    }
+    .brodect h2{
+    color: white;
+    }
+   .brodectul li{
+    font-size: medium;
+    list-style:none;
+    margin-top: 18px;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s ease;
+    cursor: pointer;
+    }
+    .brodectul li:hover{
+        font-size: x-large; 
+    }
+
+   .subscripdiv{
+    display: flex;
+    flex-direction: column;
+   }
+   .subscripdiv h2{
+    color: white;
+   }
+   .butnensubscrip{
+    padding: 10px;
+    width:15vh;
+    font-weight: bold;
+    background-color: white;
+    border-style: none;
+    transition: 0.9s ease;
+    cursor: pointer;
+    border-style:none;
+    border-radius: 5px;
+    }
+    .butnensubscrip:hover{
+    background-color: rgba(255, 255, 255, 0.637);
+      
+    }
+   
+   .intersubscrip{
+    padding: 10px;
+    width:40vh;
+    background-color: white;
+    border-style: none;
+   }
+   .footer-container {
+    background-color: #131212;
+    min-height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    padding: 3rem;
+  }
+  .footer-container img {
+    width: 10%;
+  }
+  .footer-logo {
+    font-weight: bold;
+    font-size: 2rem;
+  }

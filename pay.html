@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Css links -->
+     <link rel="stylesheet" href="staylepay.css" />
+
+     
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="login-sella">
+          <div class="user-logo">
+            <div>
+          <a href="./login.html"
+            ><img src="image/login.png" alt="login" class="login"
+          /></a>
+        </div>
+        <div>
+          <p class="user" id="user"></p>
+        </div>
+        </div>
+          <a href="./salla.html"><img src="	http://127.0.0.1:5500/image/sella.png" alt="sella" class="sella"/></a>
+        </div>
+      </div>
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul class="links">
+          <li><a href="./closhthes.html " class="a-links">عبايات</a></li>
+          <li><a href="./closhthes.html " class="a-links">فساتين</a></li>
+          <li><a href="./closhthes.html " class="a-links">جلابيات</a></li>
+          <li><a href="./closhthes.html " class="a-links">حجابات</a></li>
+          <li><a href="./closhthes.html " class="a-links">اكسسوارات</a></li>
+        </ul>
+        <a class="logo link-logo" href="./index.html">رُقي</a>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+
+      <div class="contenrsalry">
+        <h1>خاصية الدفع الامن</h1>
+        <div class="adressecontenr">
+            <h1>عنوانك المحلي</h1>
+            <div class="dataadresse">
+                <div class="adresscontenrright">
+                    <input type="text" id="name" name="name" placeholder="الأسم">
+                    <input type="text" id="Streetname" name="Streetname" placeholder="اسم الشارع">
+                    <input type="text" id="Regionname" name="Regionname" placeholder="المنطقة">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="adresscontenrleft">
+                    <input type="text" id="mobilenumber" name="mobilenumber" placeholder="رقم الجوال">
+                    <input type="text" id="buildingnumber" name="buildingnumber" placeholder=" رقم المبنى">
+                    <input type="text" id="city" name="city" placeholder=" المدينة">
+                    <button class="buttondataadresse">أضافة العنوان</button>
+                </div>
+             
+            </div>
+        </div>
+        <div class="adressecontenr">
+            <h1> طريقة الدفع</h1>
+            <div class="datapay">
+               <div class="cardpay">
+                <h3>بطاقة الصراف</h3>
+                <div><button></button></div>
+                </div> 
+
+               <div class="Applepay">
+                <h3>Apple pay</h3>
+                <div><button></button></div>
+               </div> 
+               <div class="ontimepay">
+                <h3>الدفع عند الاستلام + 11 ر.س</h3>
+                <div><button></button></div>
+               </div> 
+               
+             
+            </div>
+        </div>
+        <div class="ordercontenr">
+            <h1> ملخص الطلب</h1>
+            <div class="order"> 
+                <div class="dataorder">
+                    <h3>عدد القطع: <span id="part"></span> قطعة</h3>
+                    <h3>المبلغ الاجمالي:  <span id="cost"></span> ر.س</h3>
+                    <div class="fastorder">
+                        <h3>التوصيل السريع + 11 ر.س</h3>
+                        <div><button class="fastorderbutton"></button></div>
+                    </div> 
+                    <div><button class="Finish-order-button">أتمام الشراء</button></div>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+
+      <div class="footer-container">
+        <div class="logo footer-logo">رُقي</div>
+        <p>شارك وتسوق معنا</p>
+        <p>الشروط والأحكام سياسة الخصوصية</p>
+        <p>جميع الحقوق محفوظة لرُقي 2023</p>
+      </div>
+      <script>
+
+        document.querySelector(".buttondataadresse").addEventListener("click", () => {
+          const nameInput = document.getElementById("name");
+          const streetInput = document.getElementById("Streetname");
+          const regionInput = document.getElementById("Regionname");
+          const mobileInput = document.getElementById("mobilenumber");
+          const buildingInput = document.getElementById("buildingnumber");
+          const cityInput = document.getElementById("city");
+        
+          const name = nameInput.value.trim();
+          const street = streetInput.value.trim();
+          const region = regionInput.value.trim();
+          const mobile = mobileInput.value.trim();
+          const building = buildingInput.value.trim();
+          const city = cityInput.value.trim();
+        
+          if (name.length < 2) {
+            alert("يرجى إدخال اسم لا يقل عن حرفين أحرف !");
+            return;
+          }
+        // 
+          if (street.length < 3) {
+            alert("يرجى إدخال اسم الشارع لا يقل عن ثلاثة أحرف !");
+            return;
+          }
+        
+          if (region.length < 2) {
+            alert("يرجى إدخال اسم المنطقة لا يقل عن حرفين !");
+            return;
+          }
+        
+          if (mobile.length < 10) {
+            alert("يرجى إدخال رقم الجوال المكون من 10 أرقام على الأقل !");
+            return;
+          }
+        
+          if (building.length === 0) {
+            alert("يرجى إدخال رقم المبنى.");
+            return;
+          }
+        
+          if (city.length < 2) {
+            alert("يرجى إدخال اسم المدينة لا يقل عن حرفين! ");
+            return;
+          }
+          alert("تم الحفظ بنجاح.");
+        });
+        
+        
+            </script>          
+        </body>
+        </html>
